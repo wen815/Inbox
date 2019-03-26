@@ -1,0 +1,16 @@
+/*总体设置*/
+body{background-color:#eeeef8;}
+a{text-decoration: none;}
+/*logo*/
+#alogo{color:#2423cd;font-size:50px;letter-spacing: 15px;position: absolute;left:95px;top:35px;}
+#alogo:hover{color:#5352ed;}
+/*注册*/
+#sform{width:800px;height:550px;background-color: white;position: absolute;left:25%;top:20%;margin-bottom: 10%;}
+h2{text-align: center;}
+#spara{text-align: right;width:450px;}
+input,select{width:240px;height: 30px;}
+span{width:220px;position: absolute;left:58%;text-align: left;}
+#code{width:100px;margin-right: 42px;}
+#imgcode{width:100px;height:25px;}
+#regbtn{width:240px;height: 30px;background-color: green;color:white;}
+

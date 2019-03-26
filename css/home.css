@@ -1,0 +1,4 @@
+/*发布区*/
+#post{margin-top:20px;text-align: center;}
+#post textarea{width:500px;height:120px;resize:none;}
+#post button{width:100px;height:30px;background-color:#ff6633;color:white;margin-left:29%;}

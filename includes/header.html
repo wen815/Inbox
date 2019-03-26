@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+    *{margin:0;padding: 0;}    
+    a{text-decoration: none;color:#009999;}
+ nav{background-color: #ccccff;height: 50px;padding-top:30px;}     
+#logo{margin-left:100px;font-size:30px;} 
+a:visited{color:#009999;}
+ul{position: absolute;right:260px;top:50px;}
+ul li{display: inline;margin-left:50px;}
+#ul_1{width:100px;position: absolute;right:60px;top:40px;}
+    </style>         
+    </head>
+    <body>
+        <nav>
+            <a href="index.php" id="logo">微型博客</a>
+            <ul>
+                <?php 
+             session_start();
+             if(!empty($_GET['name'])&&!empty($_SESSION['name'])){
+                 $home='home.php?name='.$_SESSION['name'];
+        $profile='profile.php?name='.$_SESSION['name'];
+          $name=$_SESSION['name'];
+           }  
+           else{
+           echo "请先登录";
+           header("Location:index.php");
+          }
+        ?>
+             <li><a href='<?php echo $home;?>'><?php echo $name."首页"; ?></a></li>
+                      <li><a href='<?php echo $profile;?>'><?php echo $name."个人主页"; ?></a></li>
+    <li onmouseover="show_ul_1()">
+        <ul id="ul_1" style="display: none;">
+            <li><a href='<?php 
+      echo "up_list.php?name=".$name;?>'>赞</a></li>
+     <li><a>评论</a></li>
+        </ul>
+        <a>新消息</a></li>          
+ <li><a>设置</a></li>       
+            </ul>
+        </nav>
+        <script>
+         function  show_ul_1(){
+    function $(id){
+	return document.getElementById(id);
+}
+$('ul_1').style.display='block';
+            }
+        </script>
+    </body>
+</html>

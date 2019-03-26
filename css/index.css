@@ -1,0 +1,14 @@
+/*总体设置*/
+body{background-image: url('../images/bg.jpg');background-size:cover;}
+a{text-decoration: none;}
+/*logo*/
+#alogo{color:#fff6f7;font-size:50px;letter-spacing: 15px;position: absolute;left:195px;top:135px;}
+#alogo:hover{color:#5352ed;}
+/*广告语*/
+#aad{color:white;position: absolute;left:235px;top:305px;font-style:italic;letter-spacing: 15px;}
+/*登录*/
+#sform{width:350px;height: 350px;background-color: white;opacity: 0.8;position: absolute;right:195px;bottom:95px;text-align: center;}
+#sform h2{color:#5352ed;}
+#sform input,button{width:240px;height: 30px;}
+
+
